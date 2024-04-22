@@ -1,0 +1,14 @@
+
+   <h1 style = "Width:80px; border-radius:10px">
+       Add/Update </h1>
+    <p> If member email exists, this form will update user
+        details otherwise add new user </p>
+    <hr>
+
+<form action="{{url_for('myapp.add_user')}}" method="post">
+
+    <input type="text" placeholder="Name" name="name">
+    <input type="text" placeholder="Email" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <input type="submit" value="Submit">
+</form>

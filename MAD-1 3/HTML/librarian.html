@@ -1,0 +1,17 @@
+
+<div style=" border-radius: 20px; background-color:green; width: 25%; min-width:300px; padding:10px 25px 25px 25px;" >
+    <h1>Librarian Login</h1>
+     <hr>
+    <form action= "{{ url_for('myapp.userpage') }}" id="flogin" method="post">
+         <label style="width:100px">email</label>
+         <input type="text" placeholder="email" name="email">
+         <br>
+         <label style="width:100px">password</label>
+         <input type="password" placeholder="password" name="password">
+         <br>
+        <br>
+    </form>
+     <button type="submit" form=flogin name="submit"> login </button>
+     <a href="{{ url_for('myapp.signup') }}"><button> Register </button></a>
+     
+ </div>
